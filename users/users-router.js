@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
           res.json(users)
       })
       .catch(err =>{
-          res.send({error: 'error'})
+          console.log({message:`you are not logged in`, err})
       })
 })
 
