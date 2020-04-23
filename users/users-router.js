@@ -12,4 +12,4 @@ router.get("/", (req, res) => {
       })
 })
 
-module.exports = router; 2
+module.exports = router; 
