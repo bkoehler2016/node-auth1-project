@@ -6,7 +6,7 @@ const Users = require("../users/users-model");
 router.post("/", (req, res) =>{
     let user = req.body;
 
-    const rounds = process.env.HASH_ROUNDS || 1;
+    const rounds = process.env.HASH_ROUNDS || 8;
 
     const hash = bcrypt.hashSync(user.password, rounds);
 
